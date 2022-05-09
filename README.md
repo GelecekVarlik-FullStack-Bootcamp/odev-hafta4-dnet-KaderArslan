@@ -1,9 +1,9 @@
-İş Yönetim Sistemi
-Amaç
+# İş Yönetim Sistemi
+### Amaç
     • Bir işyerindeki iş takiplerinin yapılabilmesi için geliştirilecek uygulamadır
     • Program, küçük veya orta ölçekli işyerlerine hitap edecektir
     • İlgili kişiler tarafından işlerin açılması ve işi alan veya iş atanan kişinin işi çözmesi beklenmektedir.
-İsterler
+### İsterler
     • Personel Giriş
         ◦ Sisteme giriş oturum açılarak yapılmalıdır.
         ◦ E-mail ve parola ile giriş yapılmalıdır.
@@ -15,14 +15,12 @@ Amaç
         ◦ Cep Tel No
         ◦ Departman(Zorunlu)
         ◦ Yetki(Personel, Yönetici, Admin)(Zorunlu)
-Sadece Yönetici ve Admin yetkisine sahip kullanıcılar personeli kayıt edebilmelidir.
-Personel kayıt olduktan sonra ilgili kişiye 6 haneli random bir parola üretilerek ilgili kişinin mailine gönderilmelidir. Veri tabanında parolaya karşılık gelen şifre tutulmalıdır.(istediğiniz şifreleleme algoritmasını seçebilirsiniz. MD5, SHA1, vb…)
+        ◦ Sadece Yönetici ve Admin yetkisine sahip kullanıcılar personeli kayıt edebilmelidir.
+        ◦ Personel kayıt olduktan sonra ilgili kişiye 6 haneli random bir parola üretilerek ilgili kişinin mailine gönderilmelidir.
+        ◦ Veri tabanında parolaya karşılık gelen şifre tutulmalıdır.(istediğiniz şifreleleme algoritmasını seçebilirsiniz. MD5, SHA1, vb…)
     • Personel Parola Değiştirme
         ◦ Personel parolasını değiştirebilmelidir.
         ◦ Parola değiştirme esnasında eski parola kontrolü de yapılmadır.
-
-
-
     • Yeni Talep Oluşturma
         ◦ Talep başlığı girilmeli
         ◦ Departman seçilmeli(işin gideceği departman)
@@ -30,7 +28,7 @@ Personel kayıt olduktan sonra ilgili kişiye 6 haneli random bir parola üretil
         ◦ Departmana bağlı konu seçilmeli(önceden hazırlanmış listeden çekilmeli)
         ◦ İşe başlama ve bitiş tarihi girilebilmeli(bu tarihler opsiyonel olmalı)
         ◦ İçerik
-Bilgileri girilerek talep oluşturma yapılmalıdır.
+        ◦ Bilgileri girilerek talep oluşturma yapılmalıdır.
     • İş Listeleme
         ◦ Kişinin çalıştığı departmana göre işlerin listelenmesi sağlanmalı
             ▪ Talep no
@@ -40,14 +38,13 @@ Bilgileri girilerek talep oluşturma yapılmalıdır.
             ▪ Talep eden kişi bilgileri listelenmelidir
     • İş Atama
         ◦ Kişi kendi departmanına gönderilen iş listesinden kendine iş seçebilecektir. Kendi üzerine iş alma. Bir iş alındıktan sonra başka kişiye atanması engellenecektir.
-
     • İş Üzerinden Yazışma
         ◦ İşi açan ve alan kişi iş üzerinden yazışma yapabilecek.
     • İşin Detayının Görüntülenmesi
         ◦ İş Bilgileri
         ◦ İşi alan kişi bilgileri
         ◦ İş üzerinde yazışmalar görüntülenebilecek
-Pekiştirilecek Kavramlar
+#### Pekiştirilecek Kavramlar
     • N-Katmanlı Mimari tasarımı(sunum, servis, entity, iş katmanı, dal katmanı)
     • OOP(class, nesne, interface, kalıtım, çoklu kalıtım, yapıcı metod, kapsülleme)
     • ORM-Entityframework
